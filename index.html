@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- July 23, 2023 -->
+<html>
+<head>
+    <title>Jimmy Lopez</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        /* Styling for the entire page */
+        body {
+            background-color: #001f3f; /* Dark blue color for the background */
+            font-family: Arial, sans-serif;
+            color: #fff; /* White color for text */
+            margin: 0;
+            padding: 0;
+            background-image: url("space_background.jpg"); /* Space-themed background image */
+            background-size: cover;
+        }
+
+        /* Container for main content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Styling for the header */
+        header {
+            background-color: #0074D9; /* Bright blue color for the header */
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the navigation section */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #001f3f; /* Dark blue color for navigation */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for navigation links */
+        nav a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Styling for navigation links when hovered */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Centering content */
+        .center {
+            text-align: center;
+        }
+
+        /* Styling for images to fit within the container */
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #0074D9; /* Bright blue color for image border */
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        /* Styling for headings with margins */
+        h1, h2, h3, h4, h5, h6 {
+            margin: 5px;
+        }
+
+        /* Styling for buttons */
+        button {
+            background-color: #0074D9; /* Bright blue color for buttons */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        /* Styling for buttons when hovered */
+        button:hover {
+            background-color: #0053a6; /* Darker blue color on hover */
+        }
+
+        /* Styling for the volume control bar */
+        #volumeBar {
+            width: 200px;
+            height: 10px;
+            background-color: #333; /* Dark gray color for volume bar */
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        /* Styling for the filled volume indicator */
+        #volumeFill {
+            height: 100%;
+            background-color: #0074D9; /* Bright blue color for volume fill */
+            border-radius: 5px;
+        }
+
+        /* Styling for the volume text */
+        #volumeText {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            right: 0;
+            color: #fff;
+        }
+
+        /* Styling for the footer */
+        footer {
+            background-color: #001f3f; /* Dark blue color for footer */
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome To My First HTML Page</h1>
+    </header>
+
+    <!-- Navigation section -->
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./boards.html">Boards</a>
+    </nav>
+
+    <!-- Main content centered on the page -->
+    <div class="container center">
+        <h3>It ain't much, but it's honest work</h3>
+        <!-- Image of Saitama -->
+        <img src="saitama.jfif" alt="Saitama">
+        <br>
+        <h4>I Hope This Passes</h4>
+
+        <!-- Start and Stop buttons for background music -->
+        <button id="startBtn">Start Music</button>
+        <button id="stopBtn">Stop Music</button>
+
+        <!-- Volume control bar with fill indicator -->
+        <div id="volumeBar">
+            <div id="volumeFill"></div>
+            <div id="volumeText">Volume</div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        Jimmy Lopez<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283<br>
+    </footer>
+
+    <!-- JavaScript file for handling music and volume control -->
+    <script src="myScript.js"></script>
+</body>
+</html>
